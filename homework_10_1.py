@@ -37,7 +37,7 @@ def some_gen(begin, end, func):
      end: кількість елементів у послідовності
      func: функція, яка формує значення для послідовності
     """
-    for n in range(end):
+    for _ in range(end):
         yield begin
         begin = func(begin)
 
